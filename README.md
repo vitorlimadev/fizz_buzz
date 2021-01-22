@@ -1,21 +1,23 @@
 # FizzBuzz
 
-**TODO: Add description**
+A small application that reads a text file with numbers separeted by commas and creates a fizz buzz list.
 
-## Installation
+## How to run
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `fizz_buzz` to your list of dependencies in `mix.exs`:
+Download the repository and run in terminal:
 
-```elixir
-def deps do
-  [
-    {:fizz_buzz, "~> 0.1.0"}
-  ]
-end
+```shell
+iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/fizz_buzz](https://hexdocs.pm/fizz_buzz).
+And inside iex, run:
 
+```elixir
+FizzBuzz.main("numbers.txt")
+```
+
+## How to run tests
+
+```shell
+mix test
+```
